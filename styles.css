@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css?family=Amiri:400,400i,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff9ed;
+  font-family: "Amiri";
+}
+
+h1 {
+  font-family: "Amiri", serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 48px;
+  margin: 16px 0;
+  letter-spacing: -1px;
+}
+
+h1 span {
+  font-family: "Amiri", serif;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+
+h2 {
+  margin: 16px 0 2px 0;
+  font-weight: 700;
+  font-size: 40px;
+  letter-spacing: -1px;
+  line-height: 48px;
+}
+
+h3 {
+  margin: 8px 0;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+p {
+  margin: 8px 0;
+  line-height: 22px;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  border-radius: 8px;
+}
+
+hr {
+  width: 50px;
+  float: left;
+  margin: 10px 100% 10px 0;
+}
+
+.retired {
+  opacity: 0.3;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+
+.header {
+  text-align: left;
+  padding: 32px;
+  position: sticky;
+  top: 64px;
+  left: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column30 {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 4px;
+}
+
+.column70 {
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  max-width: 70%;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column33 {
+  -ms-flex: 33%; /* IE10 */
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.column33 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column33 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+  .column30 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column70 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1023px) {
+  body {
+    flex-direction: column;
+  }
+  .column33 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+  .column30 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column70 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .header {
+    position: initial;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  body {
+    flex-direction: column;
+  }
+  .column33 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column30 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .column70 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .header {
+    position: initial;
+  }
+}
